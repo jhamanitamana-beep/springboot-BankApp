@@ -1,3 +1,27 @@
+# Maven
+target/
+.mvn/
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+terraform/bankapp-automate-key.pub
+terraform/*.pem
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+.env
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar

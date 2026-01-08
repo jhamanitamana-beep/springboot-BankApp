@@ -5,7 +5,7 @@ COPY . /src
 RUN mvn clean install -D skipTests=true
 
 #-----------Stage 2 -------------
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurinhttps://github.com/jhamanitamana-beep/springboot-BankApp:17-jre
 COPY --from=builder /src/target/*.jar /src/target/bankapp.jar
 EXPOSE 8080
 CMD ["java","-jar","/src/target/bankapp.jar"]

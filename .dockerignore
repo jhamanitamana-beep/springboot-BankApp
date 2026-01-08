@@ -1,0 +1,9 @@
+target
+.git
+terraform
+.mvn
+.idea
+.vscode
+Dockerfile
+*.md
+*.log
