@@ -13,7 +13,7 @@ data "aws_ami" "os_image" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "bankapp-automate-key"
-  public_key = file("bankapp-automate-key.pub.pub")
+  public_key = file("bankapp-automate-key.pub")
 }
 
 resource "aws_default_vpc" "default" {
