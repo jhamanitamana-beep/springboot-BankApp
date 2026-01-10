@@ -5,7 +5,7 @@ COPY . /src
 RUN mvn clean install -D skipTests=true
 
 #-----------Stage 2 -------------
-FROM openjdk:17-alpine
+FROM openjdk:17-jdk-slim
 COPY --from=builder /src/target/*.jar /src/target/bankapp.jar
 EXPOSE 8080
 CMD ["java","-jar","/src/target/bankapp.jar"]
